@@ -1,0 +1,16 @@
+{
+  "name": "bootcamp-challange",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Lara Cardoso",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.8.2",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
