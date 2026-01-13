@@ -3,8 +3,8 @@ Feature: Login validation challenge
     Background:
         Given navigate to the webdrive login
 
-    Scenario Outline: Login Validate
-        And type a '<userName>' and a password '<password>'
+    Scenario Outline: Login Validation with diffrent credentials
+        When type a '<userName>' and a password '<password>'
         And click in the button submit
         Then should show a toast telling '<message>'
 
