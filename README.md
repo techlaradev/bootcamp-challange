@@ -1,86 +1,25 @@
-Claro 🙂 Vou **traduzir e organizar** as informações de forma clara, **sem criar código ou solução pronta**, só deixando os requisitos bem definidos para você implementar sozinha.
+No snippet directly addresses your question about the instructions for the challenge in lesson 32. However, based on the course content, here’s what your instructor wants you to do:
 
----
+Navigate to the Website: Start by going to the Wet Driver University's homepage.
 
-## Objetivo do desafio (Lesson 32)
+Perform Login Actions: You need to click on the login button.
 
-Você precisa **automatizar o processo de login** no site **Wet Driver University**, validando cenários de sucesso e falha.
+Validate Scenarios:
 
----
+First scenario: Use valid credentials and confirm you receive the expected message.
+Second scenario: Use invalid credentials (either username or password) and check for the failure message.
+Create a Feature File: Inside the e2e folder, you are to create a new feature file named log.feature to implement the login scenarios.
 
-## Passos gerais solicitados pelo instrutor
+Add Scenario Outlines: You may use scenario outlines to structure your test cases. This will allow you to easily add more testing scenarios without repeating code.
 
-1. **Acessar o site**
+Keep it DRY: Follow the ‘Don’t Repeat Yourself’ principle when setting up your scenarios.
 
-   * Entrar na página inicial (homepage) da **Wet Driver University**.
+Try breaking down these tasks into smaller steps and implement them systematically. If you need further clarification, let me know!
 
-2. **Interagir com o login**
+## credentials
 
-   * Localizar e clicar no botão de **Login**.
+As per the instructions provided in the course, the valid credentials for the login scenario are:
 
-3. **Validar cenários de login**
-
-   ### Cenário 1 — Login válido
-
-   * Usar **credenciais corretas**.
-   * Confirmar que a aplicação retorna a **mensagem de sucesso esperada**.
-
-   **Credenciais válidas:**
-
-   * **Username:** `webdriver`
-   * **Password:** `webdriver123`
-
-   Resultado esperado:
-
-   * Mensagem indicando que a validação foi bem-sucedida.
-
-   ### Cenário 2 — Login inválido
-
-   * Usar **credenciais inválidas** (exemplo: senha incorreta).
-   * Confirmar que a aplicação retorna uma **mensagem de falha**.
-
-   Resultado esperado:
-
-   * Mensagem indicando falha na autenticação.
-
----
-
-## Estrutura do projeto de testes
-
-* Dentro da pasta **`e2e`**, você deve:
-
-  * Criar um arquivo chamado **`log.feature`**
-  * Esse arquivo será responsável por descrever os cenários de login.
-
----
-
-## Boas práticas exigidas
-
-* **Scenario Outline**
-
-  * Usar *Scenario Outline* para organizar os cenários.
-  * Isso facilita a inclusão de novos casos sem duplicar código.
-
-* **DRY (Don’t Repeat Yourself)**
-
-  * Evitar repetição de passos.
-  * Reutilizar etapas sempre que possível.
-
----
-
-## O que o instrutor espera de você
-
-* Que você:
-
-  * Entenda o fluxo de login
-  * Separe bem **cenários de sucesso e falha**
-  * Estruture o arquivo de feature de forma limpa
-  * Siga boas práticas de automação e BDD
-
-Nada de solução pronta — o foco é **raciocínio e organização do teste**.
-
-Se depois você quiser, posso:
-
-* revisar **seu raciocínio**
-* avaliar **só a estrutura** (sem escrever por você)
-* ou te ajudar a **debugar um erro específico** 😉
+Username: webdriver
+Password: webdriver123
+Using these credentials, when you click the login button, you should be presented with a success message indicating validation succeeded. If you use any other password with the same username, you will encounter a validation failure message.
